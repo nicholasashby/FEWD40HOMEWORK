@@ -1,0 +1,217 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: Nick Ashby
+Developer @GA in SF
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #fff;
+     font-size: 62.5%;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+
+
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+#socials {
+  text-align: center;
+  letter-spacing: 30px;
+  line-height: 50px;
+}
+
+#relaxrheader {
+  background: url(../img/header_bg.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  float: left;
+} 
+
+#relaxrfooter {
+  height: 170px;
+  background-color: #121212;
+  width: 100%;
+  float: left;
+  color: #606161;
+}
+
+#relaxrfooter p {
+  padding-top: 1%;
+  text-align: center;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+#relaxrbenefits {
+  width: 100%;
+  background-color: #f0efef;
+  height:300px;
+  color: black;
+  font-size: 13px;
+  font-weight: 200;
+  float: left;
+}
+
+#relaxrsignup {
+  width: 100%;
+  background-color: #f9e42e;
+  height: 60px;
+  float: left;
+  padding-top: 12px;
+}
+
+#relaxrquote {
+  width: 100%;
+  height: 215px;
+  float: left;
+  color: white;
+  background: url(../img/testimonial_bg.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+#relaxrquote p {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 18px;
+  color: #606161;
+  padding-bottom: 5px;
+  margin: 0;
+  padding-top: 40px;
+}
+
+#relaxrquote h4 {
+  font-size: 18px;
+  font-weight: 600px;
+  padding: 0;
+  margin: 0;
+}
+
+.ulwrap {
+  padding-left: 15%;
+  list-style-position: outside;
+  list-style-type:none;
+}
+
+#relaxrbenefits h3 {
+  font-size: 20px;
+  padding-left: 5%;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+#relaxrbenefits p {
+  padding-left: 5%
+}
+
+#relaxrheader h2 {
+  text-align: center;
+  font-size: 2.4em;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+#relaxrheader h1 {
+ padding-left: 5%;
+ font-weight: 800;
+ font-size: 2.4em;
+ padding-top: 10px;
+}
+
+#relaxrfooter h1 {
+ text-align: center;
+ font-weight: 800;
+ font-size: 2.4em;
+ padding-top: 10px;
+ color: #f9e42e;
+}
+
+#getitnow {
+    background-color: #f9e42e;
+    color: black;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#signup {
+    background-color: #033048;
+    color: white;
+    display: block;
+    height: 35px;
+    line-height: 0px;
+    text-decoration: none;
+    width: 175px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 14px;
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
