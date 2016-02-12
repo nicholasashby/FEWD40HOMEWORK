@@ -1,8 +1,8 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Relaxr Blog
+Client: Relaxr
+Author: Nick Ashby
+Developer @GA in Frisco
 */
 
 
@@ -50,7 +50,30 @@ body {
      font-size: 62.5%;
      line-height: 1.4;
      font-family: 'Open Sans', sans-serif;
+     background-color: #f0efef;
 }
+
+  /* unvisited link */
+a:link {
+    color: #033048;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+section p:first-child:first-letter { float: left; color: #903; font-size: 75px; line-height: 60px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: Georgia; }
 
 
 /******************************************
@@ -84,6 +107,7 @@ footer p {
   height: 60px;
   float: left;
   padding-top: 12px;
+  margin-top: 80px;
 }
 
 footer h1 {
@@ -142,9 +166,65 @@ section {
   float: left;
 }
 
+section h1 {
+  color: #033048;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+section p {
+  font-size: 24px;
+  font-weight: 200;
+  color: #606161;
+}
+
 aside {
   width: 240px;
   float: right;
+}
+
+
+aside h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #033048;
+  padding-top: 30px;
+}
+
+aside li {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+aside p {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+aside a {
+  font-weight: 800; 
+  font-size: 22px;
+  color: #033048;
+  text-decoration: none;
+}
+
+section p:first-letter {
+    float: left;
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+    color: #033048;
+}
+
+
+h6.readmore {
+  text-align: right;
+  color: #033048;
+  font-weight: 600; 
+  font-size: 24px;
 }
 
 /******************************************
