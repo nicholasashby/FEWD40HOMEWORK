@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   // Handler for .ready() called.
 
-  $( ".readmore" ).click(function(event) {
+  $( ".readmore" ).on('click',function(event) {
     event.preventDefault();
     $('.readless.hide').show();
     $('.readmore').hide();
@@ -10,7 +10,7 @@ $( document ).ready(function() {
     });
   });
 
-  $( ".readless" ).click(function(event) {
+  $( ".readless" ).on('click',function(event) {
     event.preventDefault();
     $('.readless').hide();
     $('.readmore').show();
@@ -19,7 +19,7 @@ $( document ).ready(function() {
     });
   });
 
-$( ".learnmore" ).click(function(event) {
+$( ".learnmore" ).on('click',function(event) {
     event.preventDefault();
     $('.learnmore').hide();
     $( "#learnmoretext" ).slideDown( "slow", function() {
