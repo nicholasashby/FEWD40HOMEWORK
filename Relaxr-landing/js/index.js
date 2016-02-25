@@ -19,7 +19,7 @@ $( document ).ready(function() {
     });
   });
 
-$( ".learnmore" ).on('click',function(event) {
+  $( ".learnmore" ).on('click',function(event) {
     event.preventDefault();
     $('.learnmore').hide();
     $( "#learnmoretext" ).slideDown( "slow", function() {
