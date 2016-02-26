@@ -17,7 +17,10 @@ $(document).ready(function(){
 		
 		//start of conditionals
 		if(city == 'new york' || city == 'nyc' || city == 'New York City') {
-		$('#citibodi').css("background-image", "url(images/nyc.jpg)");  
+		//ONE WAY:
+		//$('#citibodi').css("background-image", "url(images/nyc.jpg)"); 
+		//ANOTHER WAY (with .attr):
+		$('#citibodi').attr("style", "background-image: url(images/nyc.jpg)");
 		}
 		else if(city == 'San Francisco' || city == 'SF' || city == 'Bay Area') {
 		$('#citibodi').css("background-image", "url(images/sf.jpg)");  
