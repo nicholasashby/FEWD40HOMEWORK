@@ -1,0 +1,13 @@
+*{
+	font-family: arial;
+}
+
+img {
+	float: right;
+	padding: 20px;
+}
+
+h1 {
+	color: gray;
+	font-family: 'Lato', sans-serif;
+}
