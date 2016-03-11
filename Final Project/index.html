@@ -6,6 +6,8 @@
 	<title>SF Ballet's The List</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<h1>The List</h1>
@@ -35,27 +37,24 @@
 
 	<p>Once you&#8217;re on The List, you&#8217;ll want to open those weekly emails because they just may include an invitation to an <strong>intimate insider event</strong>. Watch your email for these exclusive invitations and RSVP quickly&#8212;most events will be designed for only a handful of fans.</p>
 
+	<h2>Sign Up By Entering Your Email Below</h2>
 
-	<h5>Already have an SF Ballet account?</h5>
-
-<!--Need to create form and add in here with referral option for allowing collection of names for a referral contest-->
-
-	<p>Just click <strong>login </strong>below, accept the terms, then provide us with proof of your age.</p>
-
-
-	<h5>Already registered, but still need to submit your ID?</h5>
-
-
-	<p>Email <a href="mailto:tickets@sfballet.org?subject=ID%20Submission%20for%20The%20List">tickets@sfballet.org</a> with a photo of your driver&#39;s license or other form of legal I.D.</p>
-
-
-	<h5>Never purchased tickets to SF Ballet before?</h5>
-
-
-	<p>Just click <strong>register </strong>below, accept the terms, provide us with proof of your age.</p>
-
-<!--need to add in registration/login links and create additional pages beyond this point-->
-
+	<form>
+  	First name:<br>
+  	<input type="text" name="firstname" size="40" required><br><br>
+  	Last name:<br>
+  	<input type="text" name="lastname" size="40" required><br><br>
+  	Email:<br>
+  	<input type="text" name="useremail" size="40" required><br><br>
+  	Were you referred by anyone?<br>
+  	<input type="text" name="referral" size="40">
+	</form>
+	<br>
+	<button id="popup" type="submit">Submit</button>
+	<br>
+	<p class="hide" id="show-this-on-click">Thanks for your interest in The List! <br><br>Check your email for further instructions for verifying your age so that you can start receiving special offers from SF Ballet.</p>
+	<br>
+	<br>
 	<p class="fsSmall">* Ticket availability for The List will be announced on Mondays for that week&#8217;s performances. You may purchase up to four tickets, subject to availablity. The List ticket pricing cannot be combined with other offers or discounts, including Student Rush, and cannot be applied to previously purchased tickets.</p>
 </body>
 </html>
