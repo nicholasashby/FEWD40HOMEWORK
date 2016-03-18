@@ -2,61 +2,102 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>SF Ballet's The List</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-</head>
-<body>
-	<h1>The List</h1>
+	
+	<head>
+		<title>SF Ballet's The List</title>
 
-	<h2>A new kind of access for ballet fans ages 21&#8211;39</h2>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-	<img alt="The List" src="images/thelist_brand.jpg" style="width: 300px; height: 379px;" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<p>Are you age 21-39? Interested in low-price tickets to see one of the world&#8217;s finest ballet companies? Want to receive invitations to intimate insider events?</p>
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+		
+		<script type="text/javascript" src="js/script.js"></script>
+	
+	</head>
+	
+	<body>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">List Requirements</h4>
+		      </div>
+		      <div class="modal-body">
+			        <ul>
+
+				<li>Register or log in (links below) and provide proof of age&#8212;you only have to do this once!</li>
+
+				<li>Once we&#39;ve confirmed your proof of age, you&#8217;ll be on The List.</li>
+
+				<li>Every Monday during our season (December to May) we&#8217;ll send you an email letting you know if we have $25 tickets that week&#8212;act quickly and you could be sitting in premium seats for a fraction of the price!*</li>
+
+				<li>Then, simply log in to our website and purchase your tickets.</li>
+
+			</ul>
 
 
-	<p><strong>Then get on The List. Here&#8217;s how:</strong></p>
+			<p>Once you&#8217;re on The List, you&#8217;ll want to open those weekly emails because they just may include an invitation to an <strong>intimate insider event</strong>. Watch your email for these exclusive invitations and RSVP quickly&#8212;most events will be designed for only a handful of fans.</p>	
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		       <!--  <button type="button" class="btn btn-primary">Save changes</button> -->
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
-	<ul>
+		<div class="container">
+			<div class="innercontainer">
+				<h1>The List</h1>
 
-	<li>Register or log in (links below) and provide proof of age&#8212;you only have to do this once!</li>
+				<h2>A new kind of access for ballet fans ages 21&#8211;39</h2>
 
-	<li>Once we&#39;ve confirmed your proof of age, you&#8217;ll be on The List.</li>
+				<img alt="The List" src="images/thelist_brand.jpg" style="width: 300px; height: 379px;" />
 
-	<li>Every Monday during our season (December to May) we&#8217;ll send you an email letting you know if we have $25 tickets that week&#8212;act quickly and you could be sitting in premium seats for a fraction of the price!*</li>
+				<p>Are you age 21-39? Interested in low-price tickets to see one of the world&#8217;s finest ballet companies? Want to receive invitations to intimate insider events?</p>
+				<br>
 
-	<li>Then, simply log in to our website and purchase your tickets.</li>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				  Requirements
+				</button>
+				
 
-	</ul>
 
+				<h2 style="margin-top: 30px;">Sign Up By Entering Your Email Below</h2>
 
-	<p>Once you&#8217;re on The List, you&#8217;ll want to open those weekly emails because they just may include an invitation to an <strong>intimate insider event</strong>. Watch your email for these exclusive invitations and RSVP quickly&#8212;most events will be designed for only a handful of fans.</p>
-
-	<h2>Sign Up By Entering Your Email Below</h2>
-
-	<form>
-  	First name:<br>
-  	<input type="text" name="firstname" size="40" required><br><br>
-  	Last name:<br>
-  	<input type="text" name="lastname" size="40" required><br><br>
-  	Email:<br>
-  	<input type="text" name="useremail" size="40" required><br><br>
-  	Were you referred by anyone?<br>
-  	<input type="text" name="referral" size="40">
-	</form>
-	<br>
-	<button id="popup" type="submit">Submit</button>
-	<br>
-	<p class="hide" id="show-this-on-click">Thanks for your interest in The List! <br><br>Check your email for further instructions for verifying your age so that you can start receiving special offers from SF Ballet.</p>
-	<br>
-	<br>
-	<p class="fsSmall">* Ticket availability for The List will be announced on Mondays for that week&#8217;s performances. You may purchase up to four tickets, subject to availablity. The List ticket pricing cannot be combined with other offers or discounts, including Student Rush, and cannot be applied to previously purchased tickets.</p>
-</body>
+				<form>
+			  		First name:<br>
+			  		<input type="text" name="firstname" size="40" required><br><br>
+			  		Last name:<br>
+			  		<input type="text" name="lastname" size="40" required><br><br>
+			  		Email:<br>
+			  		<input type="text" name="useremail" size="40" required><br><br>
+			  		Were you referred by anyone?<br>
+			  		<input type="text" name="referral" size="40">
+				</form>
+				<br>
+				<button id="popup" type="submit">Submit</button>
+				<br>
+				<p class="hide" id="show-this-on-click">Thanks for your interest in The List! <br><br>Check your email for further instructions for verifying your age so that you can start receiving special offers from SF Ballet.</p>
+				<br>
+				<br>
+				<p class="fsSmall">* Ticket availability for The List will be announced on Mondays for that week&#8217;s performances. You may purchase up to four tickets, subject to availablity. The List ticket pricing cannot be combined with other offers or discounts, including Student Rush, and cannot be applied to previously purchased tickets.</p>
+			</div>
+		</div>
+	
+	</body>
 </html>
 
 

@@ -1,5 +1,6 @@
 *{
 	font-family: arial;
+	color: black;
 }
 
 img {
@@ -15,4 +16,54 @@ h1 {
 .hide {
   display: none;
   color: red;
+}
+
+.container {
+   border: 0px solid #DDDDDD;
+   border-radius: 25px;
+   width: 1000px;
+   position: relative;
+   margin: 0 auto;
+   margin-top: 20px;
+   /*background-color: white;*/
+   /*opacity: .5;*/
+}
+
+.container:before{
+   content: '';
+   border: 1px solid #DDDDDD;
+   border-radius: 25px;
+   width: 950px;
+   height: 750px;
+   padding-right: 100px;
+   position: absolute;
+   background: white;
+   opacity: .5;
+   z-index: -1;
+}
+
+
+.innercontainer {
+   border: 0px;
+   padding: 20px;
+   position: relative;
+   /*z-index: 1;*/
+}
+
+body{
+	background-image: url("../images/sfballet_groupshot_edit_large.jpg");
+	background-size: 100%;
+}
+
+
+.tag {
+   float: left;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   z-index: 1000;
+   background-color: #92AD40;
+   padding: 5px;
+   color: #FFFFFF;
+   font-weight: bold;
 }
