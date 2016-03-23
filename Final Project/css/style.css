@@ -1,3 +1,19 @@
+@media (max-width: 700px) {
+   body .container:before {
+      width: 360px;
+      height: 1100px;
+   }
+   body .container p {
+      width: 35%;
+   }
+   body .container h2 {
+      width: 35%;
+   }
+   body div #hidethis {
+      width: 35%;
+   }
+}
+
 *{
 	font-family: arial;
 	color: black;
@@ -6,6 +22,7 @@
 img {
 	float: right;
 	padding: 20px;
+   margin-top: 90px;
 }
 
 h1 {
@@ -13,9 +30,12 @@ h1 {
 	font-family: 'Lato', sans-serif;
 }
 
-.hide {
+body div #hidethis {
+   margin-right: 20px
+}
+
+#hidethis {
   display: none;
-  color: red;
 }
 
 .container {
@@ -34,11 +54,11 @@ h1 {
    border: 1px solid #DDDDDD;
    border-radius: 25px;
    width: 950px;
-   height: 750px;
+   height: 900px;
    padding-right: 100px;
    position: absolute;
    background: white;
-   opacity: .5;
+   opacity: .8;
    z-index: -1;
 }
 
@@ -53,6 +73,7 @@ h1 {
 body{
 	background-image: url("../images/sfballet_groupshot_edit_large.jpg");
 	background-size: 100%;
+   background-size: cover;
 }
 
 

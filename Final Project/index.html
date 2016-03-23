@@ -1,7 +1,7 @@
 <!--need to add in responsive design attributes-->
 
 <!DOCTYPE html>
-<html>
+<html5>
 	
 	<head>
 		<title>SF Ballet's The List</title>
@@ -19,8 +19,7 @@
 
 		<link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 		
-		<script type="text/javascript" src="js/script.js"></script>
-	
+		<script type="text/javascript" src="js/script.js"></script>	
 	</head>
 	
 	<body>
@@ -35,9 +34,9 @@
 		      <div class="modal-body">
 			        <ul>
 
-				<li>Register or log in (links below) and provide proof of age&#8212;you only have to do this once!</li>
+				<li>Register by filling in the form below. You need a valid SF Ballet Account for the email field. <a href="https://www.sfballet.org/account/register" target="_blank">(Register Here).</a></li>
 
-				<li>Once we&#39;ve confirmed your proof of age, you&#8217;ll be on The List.</li>
+				<li>Once we&#39;ve confirmed your proof of age, you&#8217;ll be on The List. Any legal-ish document will suffice.</li>
 
 				<li>Every Monday during our season (December to May) we&#8217;ll send you an email letting you know if we have $25 tickets that week&#8212;act quickly and you could be sitting in premium seats for a fraction of the price!*</li>
 
@@ -66,7 +65,7 @@
 				<img alt="The List" src="images/thelist_brand.jpg" style="width: 300px; height: 379px;" />
 
 				<p>Are you age 21-39? Interested in low-price tickets to see one of the world&#8217;s finest ballet companies? Want to receive invitations to intimate insider events?</p>
-				<br>
+				<p style="margin-top: 10px;">Read the requirements and sign up below!</p>
 
 				<!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -75,30 +74,37 @@
 				
 
 
-				<h2 style="margin-top: 30px;">Sign Up By Entering Your Email Below</h2>
+				<h2 style="margin-top: 30px;">Sign Up</h2>
 
-				<form>
+				<form action="https://formspree.io/nicholas.ashby@gmail.com"
+      method="POST">
 			  		First name:<br>
 			  		<input type="text" name="firstname" size="40" required><br><br>
 			  		Last name:<br>
 			  		<input type="text" name="lastname" size="40" required><br><br>
-			  		Email:<br>
+			  		SF Ballet Account Email: <a href="https://www.sfballet.org/account/register" target="_blank">(Register Here)</a><br>
 			  		<input type="text" name="useremail" size="40" required><br><br>
 			  		Were you referred by anyone?<br>
 			  		<input type="text" name="referral" size="40">
+			  		<br><br><strong>Attach proof of age:</strong>
+    					<input margin-top="10px" type="file" name="myFile">
+    					<br><input id="popup" class="btn btn-primary btn-lg" type="submit" value="Upload And Submit" 
+             				  onclick="google.script.run
+                     			   .uploadFiles(this.parentNode);
+                      			   return false;">
 				</form>
 				<br>
-				<button id="popup" type="submit">Submit</button>
-				<br>
-				<p class="hide" id="show-this-on-click">Thanks for your interest in The List! <br><br>Check your email for further instructions for verifying your age so that you can start receiving special offers from SF Ballet.</p>
-				<br>
-				<br>
+				<div id="hidethis" class="alert alert-success">
+ 			 	<strong>Thanks for signing up! Once we verify your age you'll begin receiving your List offers shortly.</strong>
+				</div>
+			<footer>
 				<p class="fsSmall">* Ticket availability for The List will be announced on Mondays for that week&#8217;s performances. You may purchase up to four tickets, subject to availablity. The List ticket pricing cannot be combined with other offers or discounts, including Student Rush, and cannot be applied to previously purchased tickets.</p>
+			</footer>
 			</div>
 		</div>
 	
 	</body>
-</html>
+</html5>
 
 
 
